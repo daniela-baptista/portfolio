@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Daniela Baptista | Product & UX Portfolio</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f6f3;
+  color: #1f1f1f;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* NEW TOP BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 0 10px;
+}
+
+.logo {
+  font-family: Georgia, serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.top-nav {
+  display: flex;
+  gap: 18px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: #1f1f1f;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.top-nav a:hover {
+  background: #eceae6;
+}
+
+header {
+  padding: 40px 0 40px;
+}
+
+h1 {
+  font-size: 56px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 22px;
+  max-width: 700px;
+  color: #555;
+}
+
+.hero {
+  padding: 40px 0 80px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  max-width: 800px;
+  line-height: 1.2;
+}
+
+.hero p {
+  max-width: 700px;
+  font-size: 18px;
+  color: #666;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 14px 28px;
+  background: #1f1f1f;
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+}
+
+.projects {
+  padding: 60px 0;
+}
+
+.section-title {
+  font-size: 36px;
+  margin-bottom: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  transition: 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card h3 {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  background: #efefef;
+  font-size: 12px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+}
+
+.about,
+.contact {
+  padding: 60px 0;
+}
+
+.about p,
+.contact p {
+  max-width: 800px;
+  line-height: 1.7;
+  color: #555;
+}
+
+footer {
+  padding: 60px 0;
+  text-align: center;
+  color: #666;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  .hero h2 {
+    font-size: 32px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="top-bar">
+  <div class="logo">DB</div>
+
+  <nav class="top-nav">
+    <a href="index.html">Home</a>
+    <a href="#projects">Work</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</div>
+
+<header>
+  <h1>Daniela Baptista</h1>
+  <p class="subtitle">
+    Product Experience | UX Strategy | Customer & Seller Journey Design
+  </p>
+</header>
+
+<section class="hero">
+  <h2>
+    Designing scalable customer and seller experiences driven by data, clarity and business impact.
+  </h2>
+  <p>
+    Portfolio built around real-world initiatives at Worten Marketplace,
+    combining customer experience, workflow optimisation, AI support and operational product thinking.
+  </p>
+  <a href="#projects" class="btn">Explore Projects</a>
+</section>
+
+<section class="projects" id="projects">
+  <h2 class="section-title">Selected Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <a href="estimated-delivery-dates.html">
+        <span class="tag">Customer Experience</span>
+        <span class="tag">NPS / NSS</span>
+        <h3>Estimated Delivery Dates</h3>
+        <p>
+          Data-driven initiative focused on improving customer expectations
+          and reducing false delay perception.
+        </p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="transactional-emails.html">
+        <span class="tag">UX Writing</span>
+        <span class="tag">Journey Design</span>
+        <h3>Transactional Emails Redesign</h3>
+        <p>
+          Improved clarity and trust across the post-purchase communication journey.
+        </p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="seller-center-ai.html">
+        <span class="tag">AI</span>
+        <span class="tag">Seller Experience</span>
+        <h3>Seller Center + AI Chatbot</h3>
+        <p>
+          Centralised seller support ecosystem with scalable AI assistance.
+        </p>
+      </a>
+    </div>
+
+    <div class="card">
+      <a href="ticket-workflow-insightly.html">
+        <span class="tag">Platform</span>
+        <span class="tag">Operations</span>
+        <h3>Ticket Workflow | Insightly</h3>
+        <p>
+          Ticket lifecycle, SLA management and operational workflow optimisation.
+        </p>
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<section class="about" id="about">
+  <h2>About Me</h2>
+  <p>
+    Product and customer experience professional with hands-on experience
+    designing real-world initiatives across marketplace operations, customer journey
+    and seller support systems.
+  </p>
+</section>
+
+<section class="contact" id="contact">
+  <h2>Contact</h2>
+  <p>
+    <a href="https://www.linkedin.com/in/daniela-baptista-559785b0" target="_blank">
+      LinkedIn
+    </a>
+  </p>
+</section>
+
+<footer>
+  © Daniela Baptista
+</footer>
+
+</div>
+
+</body>
+</html>
