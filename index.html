@@ -3,217 +3,216 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Daniela Baptista | Product & UX Portfolio</title>
+<title>Daniela Baptista | Portfolio</title>
 
 <style>
-* {
-  box-sizing: border-box;
+*{
+  box-sizing:border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f7f6f3;
-  color: #1f1f1f;
+html{
+  scroll-behavior:smooth;
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#f8f6f2;
+  color:#1f1f1f;
 }
 
-/* NEW TOP BAR */
-.top-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px 0 10px;
+/* NAV */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:24px 8%;
+  position:sticky;
+  top:0;
+  background:rgba(248,246,242,0.95);
+  backdrop-filter:blur(8px);
+  z-index:1000;
+  box-shadow:0 2px 10px rgba(0,0,0,0.04);
 }
 
-.logo {
-  font-family: Georgia, serif;
-  font-size: 16px;
-  font-weight: 600;
-  letter-spacing: 2px;
+.logo{
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:2px;
+  font-family:Georgia, serif;
 }
 
-.top-nav {
-  display: flex;
-  gap: 18px;
+.logo a{
+  text-decoration:none;
+  color:#b88746;
 }
 
-.top-nav a {
-  text-decoration: none;
-  color: #1f1f1f;
-  font-size: 13px;
-  font-weight: 600;
-  padding: 6px 8px;
-  border-radius: 6px;
+.menu{
+  display:flex;
+  gap:24px;
+  align-items:center;
 }
 
-.top-nav a:hover {
-  background: #eceae6;
+.menu a{
+  text-decoration:none;
+  color:#1f1f1f;
+  font-size:14px;
+  font-weight:600;
+  transition:0.2s;
 }
 
-header {
-  padding: 40px 0 40px;
+.menu a:hover{
+  color:#b88746;
 }
 
-h1 {
-  font-size: 56px;
-  margin-bottom: 10px;
+.lang-btn{
+  border:1px solid #d9d2c5;
+  padding:8px 12px;
+  border-radius:20px;
+  font-size:12px;
 }
 
-.subtitle {
-  font-size: 22px;
-  max-width: 700px;
-  color: #555;
+/* HERO */
+.hero{
+  padding:100px 8%;
+  animation:fadeIn 0.8s ease;
 }
 
-.hero {
-  padding: 40px 0 80px;
+.hero h1{
+  font-size:60px;
+  margin-bottom:12px;
 }
 
-.hero h2 {
-  font-size: 40px;
-  max-width: 800px;
-  line-height: 1.2;
+.hero p{
+  max-width:720px;
+  font-size:20px;
+  color:#555;
+  line-height:1.6;
 }
 
-.hero p {
-  max-width: 700px;
-  font-size: 18px;
-  color: #666;
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 28px;
+  border-radius:12px;
+  background:#b88746;
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+  transition:0.3s;
 }
 
-.btn {
-  display: inline-block;
-  margin-top: 24px;
-  padding: 14px 28px;
-  background: #1f1f1f;
-  color: white;
-  text-decoration: none;
-  border-radius: 10px;
-  font-weight: bold;
+.btn:hover{
+  transform:translateY(-2px);
 }
 
-.projects {
-  padding: 60px 0;
+/* PROJECTS */
+.projects{
+  padding:60px 8%;
 }
 
-.section-title {
-  font-size: 36px;
-  margin-bottom: 40px;
+.section-title{
+  font-size:36px;
+  margin-bottom:40px;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
+.grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:28px;
 }
 
-.card {
-  background: white;
-  border-radius: 20px;
-  padding: 32px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
-  transition: 0.25s ease;
+.card{
+  background:white;
+  padding:32px;
+  border-radius:20px;
+  box-shadow:0 8px 24px rgba(0,0,0,0.08);
+  transition:0.25s ease;
 }
 
-.card:hover {
-  transform: translateY(-4px);
+.card:hover{
+  transform:translateY(-6px);
+  box-shadow:0 14px 28px rgba(0,0,0,0.12);
 }
 
-.card a {
-  text-decoration: none;
-  color: inherit;
+.card h3{
+  font-size:26px;
 }
 
-.card h3 {
-  font-size: 28px;
-  margin-top: 10px;
+.card p{
+  color:#666;
+  line-height:1.6;
 }
 
-.card p {
-  color: #555;
-  line-height: 1.6;
+/* ABOUT */
+.about{
+  padding:60px 8%;
 }
 
-.tag {
-  display: inline-block;
-  padding: 6px 12px;
-  border-radius: 20px;
-  background: #efefef;
-  font-size: 12px;
-  margin-right: 8px;
-  margin-bottom: 10px;
+.about p{
+  max-width:760px;
+  line-height:1.8;
+  color:#555;
 }
 
-.about,
-.contact {
-  padding: 60px 0;
+/* CONTACT */
+.contact{
+  padding:60px 8%;
 }
 
-.about p,
-.contact p {
-  max-width: 800px;
-  line-height: 1.7;
-  color: #555;
+/* ANIMATION */
+@keyframes fadeIn{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
 }
 
-footer {
-  padding: 60px 0;
-  text-align: center;
-  color: #666;
-  font-size: 14px;
-}
-
-@media (max-width: 900px) {
-  .grid {
-    grid-template-columns: 1fr;
+/* RESPONSIVE */
+@media (max-width:900px){
+  .grid{
+    grid-template-columns:1fr;
   }
 
-  h1 {
-    font-size: 42px;
+  .hero h1{
+    font-size:42px;
   }
 
-  .hero h2 {
-    font-size: 32px;
+  .hero p{
+    font-size:18px;
+  }
+
+  nav{
+    flex-direction:column;
+    gap:16px;
   }
 }
 </style>
 </head>
-
 <body>
 
-<div class="container">
+<nav>
+  <div class="logo">
+    <a href="index.html">DB</a>
+  </div>
 
-<div class="top-bar">
-  <div class="logo">DB</div>
-
-  <nav class="top-nav">
-    <a href="index.html">Home</a>
+  <div class="menu">
     <a href="#projects">Work</a>
     <a href="#about">About</a>
     <a href="#contact">Contact</a>
-  </nav>
-</div>
-
-<header>
-  <h1>Daniela Baptista</h1>
-  <p class="subtitle">
-    Product Experience | UX Strategy | Customer & Seller Journey Design
-  </p>
-</header>
+    <a href="#" class="lang-btn">ENG | PT</a>
+  </div>
+</nav>
 
 <section class="hero">
-  <h2>
-    Designing scalable customer and seller experiences driven by data, clarity and business impact.
-  </h2>
+  <h1>Daniela Baptista</h1>
   <p>
-    Portfolio built around real-world initiatives at Worten Marketplace,
-    combining customer experience, workflow optimisation, AI support and operational product thinking.
+    Product Experience, UX Strategy and Customer Journey Design.
+    Building scalable experiences through creativity, clarity and business thinking.
   </p>
   <a href="#projects" class="btn">Explore Projects</a>
 </section>
@@ -224,74 +223,44 @@ footer {
   <div class="grid">
 
     <div class="card">
-      <a href="estimated-delivery-dates.html">
-        <span class="tag">Customer Experience</span>
-        <span class="tag">NPS / NSS</span>
-        <h3>Estimated Delivery Dates</h3>
-        <p>
-          Data-driven initiative focused on improving customer expectations
-          and reducing false delay perception.
-        </p>
-      </a>
+      <h3>Estimated Delivery Dates</h3>
+      <p>Customer expectation and post-purchase journey optimisation.</p>
     </div>
 
     <div class="card">
-      <a href="transactional-emails.html">
-        <span class="tag">UX Writing</span>
-        <span class="tag">Journey Design</span>
-        <h3>Transactional Emails Redesign</h3>
-        <p>
-          Improved clarity and trust across the post-purchase communication journey.
-        </p>
-      </a>
+      <h3>Seller Center + AI Chatbot</h3>
+      <p>AI-driven seller support and platform centralisation strategy.</p>
     </div>
 
     <div class="card">
-      <a href="seller-center-ai.html">
-        <span class="tag">AI</span>
-        <span class="tag">Seller Experience</span>
-        <h3>Seller Center + AI Chatbot</h3>
-        <p>
-          Centralised seller support ecosystem with scalable AI assistance.
-        </p>
-      </a>
+      <h3>Transactional Emails</h3>
+      <p>Communication redesign focused on clarity and trust.</p>
     </div>
 
     <div class="card">
-      <a href="ticket-workflow-insightly.html">
-        <span class="tag">Platform</span>
-        <span class="tag">Operations</span>
-        <h3>Ticket Workflow | Insightly</h3>
-        <p>
-          Ticket lifecycle, SLA management and operational workflow optimisation.
-        </p>
-      </a>
+      <h3>Seller Academy</h3>
+      <p>Learning and enablement experience designed for seller autonomy.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ticket Workflow</h3>
+      <p>Operational process optimisation and SLA visibility.</p>
     </div>
 
   </div>
 </section>
 
 <section class="about" id="about">
-  <section id="about">
-  <h2>About Me</h2>
+  <h2 class="section-title">About Me</h2>
   <p>
-    I am a Product Experience and Customer Journey professional with
-    hands-on experience in marketplace operations, UX strategy,
-    customer communication and workflow optimisation.
-  </p>
-  <p>
-    My work sits at the intersection of product thinking,
-    customer experience and business impact — transforming
-    operational pain points into scalable, user-centred solutions.
-  </p>
-  <p>
-    Alongside product and service design, I also bring a strong
-    creative background in visual communication and graphic design.
+    I work at the intersection of product thinking, customer experience and creativity.
+    My background combines operational strategy, UX thinking and visual communication,
+    helping teams transform complexity into clear and scalable experiences.
   </p>
 </section>
 
 <section class="contact" id="contact">
-  <h2>Contact</h2>
+  <h2 class="section-title">Contact</h2>
   <p>Email: daniela.marques.baptista@gmail.com</p>
   <p>
     LinkedIn:
@@ -301,11 +270,13 @@ footer {
   </p>
 </section>
 
-<footer>
-  © Daniela Baptista
+<footer style="
+  padding:60px 8%;
+  text-align:center;
+  color:#666;
+  font-size:14px;
+  border-top:1px solid #e8e2d8;
+  margin-top:40px;
+">
+  © 2026 Daniela Baptista
 </footer>
-
-</div>
-
-</body>
-</html>
