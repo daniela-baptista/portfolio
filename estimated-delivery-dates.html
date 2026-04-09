@@ -1,47 +1,175 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Estimated Delivery Dates | Daniela Baptista</title>
-<style>
-body{margin:0;font-family:Arial,sans-serif;background:#f7f6f3;color:#1f1f1f;}
-.container{width:90%;max-width:1100px;margin:auto;}
-section{padding:60px 0;}
-a{text-decoration:none;color:#1f1f1f;font-weight:bold;}
-.card{background:white;padding:32px;border-radius:20px;box-shadow:0 6px 20px rgba(0,0,0,0.08);margin-top:30px;}
-.placeholder{width:100%;height:320px;background:#eceae6;border-radius:20px;display:flex;justify-content:center;align-items:center;color:#666;font-size:18px;margin-top:30px;}
-h1{font-size:48px;}
-</style>
-</head>
-<body>
-<div class="container">
-<section>
-<a href="index.html">← Back to portfolio</a>
-<h1>Estimated Delivery Dates</h1>
-<p>Customer journey initiative focused on improving delivery expectation clarity and reducing dissatisfaction.</p>
-<div class="placeholder">Delivery flow mockup coming soon</div>
+<main class="project-page">
 
-<div class="card">
-<h2>Problem</h2>
-<p>Customers had limited visibility regarding actual delivery timing, creating false expectations and dissatisfaction.</p>
-</div>
+  <!-- HERO -->
+  <section class="project-hero">
+    <p class="project-tag">Customer Experience • Operations • Journey Optimization</p>
+    <h1>Estimated Delivery Dates</h1>
+    <p class="project-subtitle">
+      Redefining post-purchase delivery expectations through data-driven journey analysis.
+    </p>
+  </section>
 
-<div class="card">
-<h2>Action</h2>
-<p>Implemented estimated delivery dates across PDP, checkout and transactional emails.</p>
-</div>
+  <!-- KEY INSIGHT -->
+  <section class="insight-highlight">
+    <h2>Key Insight</h2>
+    <div class="insight-card">
+      <h3>65% of “late” orders were actually within SLA</h3>
+      <p>
+        The core issue was not logistics performance, but a mismatch between
+        customer expectations and how delivery timelines were communicated.
+      </p>
+    </div>
+  </section>
 
-<div class="card">
-<h2>My role</h2>
-<p>Led the initial analysis and helped define the customer communication logic with cross-functional teams.</p>
-</div>
+  <!-- METRICS -->
+  <section class="metrics-section">
+    <h2>Data & Findings</h2>
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <h3>346K</h3>
+        <p>Shipments analysed</p>
+      </div>
 
-<div class="card">
-<h2>Impact</h2>
-<p>Improved expectation management and contributed to higher satisfaction and reduced post-purchase friction.</p>
-</div>
-</section>
-</div>
-</body>
-</html>
+      <div class="metric-card">
+        <h3>42%</h3>
+        <p>Complaints related to delivery time</p>
+      </div>
+
+      <div class="metric-card">
+        <h3>65%</h3>
+        <p>Orders marked as late were still within SLA</p>
+      </div>
+
+      <div class="metric-card">
+        <h3>79%</h3>
+        <p>Long deadline orders delivered on time</p>
+      </div>
+
+      <div class="metric-card">
+        <h3>63%</h3>
+        <p>Delivered before the start of the expected window</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="content-section">
+    <h2>The Problem</h2>
+    <p>
+      Customer dissatisfaction around delivery timelines was one of the main
+      drivers of post-purchase support contacts and negative NSS feedback.
+      Initial assumptions pointed toward logistics delays.
+    </p>
+    <p>
+      However, deeper analysis revealed that the main issue was not delivery
+      performance itself, but the way estimated dates were presented across
+      the customer journey.
+    </p>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="content-section">
+    <h2>My Approach</h2>
+    <ul class="process-list">
+      <li>Analysed 346,000 shipment records</li>
+      <li>Reviewed NSS complaint themes and support tickets</li>
+      <li>Cross-checked SLA vs perceived delay</li>
+      <li>Mapped customer expectation touchpoints</li>
+      <li>Identified gaps in ETA communication logic</li>
+    </ul>
+  </section>
+
+  <!-- SOLUTION -->
+  <section class="content-section">
+    <h2>Solution Design</h2>
+    <p>
+      I proposed improvements to the estimated delivery communication flow,
+      focusing on expectation setting and timeline clarity.
+    </p>
+
+    <div class="solution-grid">
+      <div class="solution-card">
+        <h3>Before</h3>
+        <p>
+          Generic delivery windows and limited visibility led customers to
+          perceive compliant orders as delayed.
+        </p>
+      </div>
+
+      <div class="solution-card">
+        <h3>After</h3>
+        <p>
+          Clearer ETA messaging, better range explanation and improved
+          milestone communication reduced confusion.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- IMPACT -->
+  <section class="content-section">
+    <h2>Business Impact</h2>
+    <p>
+      The project shifted the focus from operational blame to expectation
+      management, enabling more accurate root-cause analysis and better
+      communication strategies.
+    </p>
+    <p>
+      This created the basis for reducing repetitive support contacts and
+      improving post-purchase customer trust.
+    </p>
+  </section>
+
+</main>
+.project-page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 24px;
+}
+
+.project-hero {
+  margin-bottom: 60px;
+}
+
+.project-tag {
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.project-subtitle {
+  font-size: 20px;
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.insight-card,
+.metric-card,
+.solution-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+}
+
+.metrics-grid,
+.solution-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.metric-card h3 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.content-section {
+  margin-top: 60px;
+}
+
+.process-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+}
