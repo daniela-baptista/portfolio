@@ -1,29 +1,321 @@
-<section class="project-hero">
-  <p class="project-tag">Operations • Workflow Design • Process Improvement</p>
-  <h1>Ticket Workflow</h1>
-  <p class="project-subtitle">
-    Designing a scalable support workflow to improve resolution speed and team efficiency.
-  </p>
-</section>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ticket Workflow | Daniela Baptista</title>
 
-<section class="insight-highlight">
-  <div class="insight-card">
-    <h3>Lack of documentation created operational dependency and delays</h3>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent: #E85D4F;
+      --bg: #F5EFE6;
+      --text: #1F2937;
+      --muted: #6B7280;
+      --shadow: rgba(0,0,0,0.06);
+    }
+
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    nav {
+      padding: 24px 0;
+      background: rgba(245,239,230,0.9);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+    }
+
+    .nav-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    .back-link {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+
+    .hero, .section {
+      animation: fadeUp 0.8s ease;
+    }
+
+    .hero {
+      padding: 80px 0 60px;
+    }
+
+    h1, h2 {
+      font-family: "Space Grotesk", sans-serif;
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      font-size: 62px;
+      line-height: 0.95;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 34px;
+      margin-bottom: 24px;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      font-size: 20px;
+      color: var(--muted);
+    }
+
+    .section {
+      padding: 56px 0;
+    }
+
+    .card {
+      background: white;
+      border-radius: 24px;
+      padding: 32px;
+      box-shadow: 0 8px 28px var(--shadow);
+      margin-bottom: 24px;
+      transition: transform 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .metric-number {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 48px;
+      color: var(--accent);
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .label {
+      font-family: "Space Grotesk", sans-serif;
+      color: var(--accent);
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .workflow-steps {
+      display: grid;
+      gap: 18px;
+    }
+
+    .step {
+      padding: 20px;
+      border-left: 4px solid var(--accent);
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px var(--shadow);
+    }
+
+    .step-title {
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 18px;
+      margin-bottom: 8px;
+    }
+
+    .mockup-box {
+      min-height: 340px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-style: italic;
+    }
+
+    footer {
+      padding: 60px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 44px; }
+      .metric-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a href="index.html" class="logo">DB</a>
+    <a href="index.html" class="back-link">Back to Home</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="container">
+    <h1>Building a support system from scratch</h1>
+    <p class="subtitle">
+      A workflow design project focused on creating structure, visibility and
+      scalability for seller support operations.
+    </p>
   </div>
 </section>
 
-<section class="content-section">
-  <h2>The Problem</h2>
-  <p>
-    Workflow knowledge was undocumented, creating bottlenecks and team dependency,
-    especially during absence periods.
-  </p>
+<section class="section">
+  <div class="container">
+    <h2>Challenge</h2>
+    <div class="card">
+      <p>
+        The support operation lacked documentation, standardised flows and clear ownership.
+        Tickets were being handled inconsistently, creating delays, duplicated work and
+        knowledge dependency on specific team members.
+      </p>
+    </div>
+  </div>
 </section>
 
-<section class="content-section">
-  <h2>Solution</h2>
-  <p>
-    Designed workflow logic, documentation and escalation routes to improve
-    team continuity and SLA compliance.
-  </p>
+<section class="section">
+  <div class="container">
+    <h2>Operational Pain Points</h2>
+    <div class="metric-grid">
+      <div class="card">
+        <div class="metric-number">0</div>
+        <p>documented process flows</p>
+      </div>
+
+      <div class="card">
+        <div class="metric-number">High</div>
+        <p>knowledge dependency risk</p>
+      </div>
+
+      <div class="card">
+        <div class="metric-number">Low</div>
+        <p>visibility over ticket status</p>
+      </div>
+    </div>
+  </div>
 </section>
+
+<section class="section">
+  <div class="container">
+    <h2>Solution Design</h2>
+    <div class="card">
+      <p>
+        I mapped the end-to-end ticket lifecycle, defined ownership stages,
+        created categorisation logic and escalation rules, and introduced
+        a standard workflow that could be replicated across teams.
+      </p>
+    </div>
+
+    <div class="workflow-steps">
+      <div class="step">
+        <div class="step-title">1. Intake & Categorisation</div>
+        <p>Defined ticket entry points, issue types and priority logic.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-title">2. Routing & Ownership</div>
+        <p>Established clear responsibilities and handoff rules.</p>
+      </div>
+
+      <div class="step">
+        <div class="step-title">3. Resolution & Documentation</div>
+        <p>Created reusable resolution flows and knowledge base standards.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Before vs After</h2>
+
+    <div class="two-col">
+      <div class="card">
+        <div class="label">Before</div>
+        <p>
+          Process knowledge lived in people’s heads and operational continuity
+          was highly vulnerable to absence.
+        </p>
+      </div>
+
+      <div class="card">
+        <div class="label">After</div>
+        <p>
+          A scalable workflow system reduced dependency, improved consistency
+          and accelerated onboarding.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Impact</h2>
+    <div class="card">
+      <p>
+        This project transformed support from an informal task flow into an
+        operational framework with clear governance, visibility and scalability.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Workflow Map / Screens</h2>
+    <div class="card mockup-box">
+      Add workflow diagrams / ticket board screenshots here
+    </div>
+  </div>
+</section>
+
+<footer>
+  @2026 Daniela Baptista
+</footer>
+
+</body>
+</html>
